@@ -3,6 +3,8 @@ title: "Bangladesh Monitorin and Evaluation"
 author: "Diana Kumar and Martin Bratschi"
 date: "6/14/2019"
 output:
+  word_document: default
+  pdf_document: default
   html_document:
     df_print: paged
 ---
@@ -12,7 +14,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 # Governance and System Architecture:
-In early 2016 D4H-CRVS assisted the Government of Bangladesh to etablish the Ofifce of the 
+In early 2016 D4H-CRVS assisted the Government of Bangladesh to etablish the Ofifce of the Registrar General.
 
 # Notificotion and Registartion of Birth and Death:
 
