@@ -13,12 +13,17 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-# Governance and System Architecture:
-In early 2016 D4H-CRVS assisted the Government of Bangladesh to etablish the Ofifce of the Registrar General. D4H further assisted the governmnet of Bangeldsh to establish a high level committee for CRVS which meets twice a year and includes rperesentatives form XXXXX ministries. The last meeting occured on XXXXX at whcih YYY was endorsed. The GoB alos formed a Implemenation Committe which meets every month. Its last meeting was at XX and it decided to YYYYY.
+# Header
 
-# Notificotion and Registartion of Birth and Death:
-As part of D4H efforts the Kaligonj Model was developed which enatcts the requitrement of front lienmedical workesr to assist famies with the regsiatrtion of bwirth and detahs. following testing in one sub-divsison until XXX the model has bene scaled up to XXX sub-discsisosn (all of the Gazipur District as well as 1 sub-district ine ach of the other 6 Divsisosn of Bangaldesh (4 sub-diustricts superted by D4H and 10 by GoB) and regsiatryion by the front liene mediucal workers is ongoing. So far XX peopel have been tarined on the model up until end of May 2019.
 
+```{r BGD_MCCOD}
+library(textreadr)
+library(readtext)
+#e<-read_docx("C:/Users/martin/Box/CRVS D4H/5. M&E/X_Old/EvolvingText/MandE/BangladeshTest.docx")
+g<-readtext("C:/Users/martin/Box/CRVS D4H/5. M&E/X_Old/EvolvingText/MandE/BangladeshTestInput.docx")$text
+h<- strsplit(g, "<BGD_MCCOD>",)[[1]][2]
+cat(h)
+```
 
 
 ## R Markdown
